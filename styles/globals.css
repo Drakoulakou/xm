@@ -10,9 +10,16 @@ h1 {
   color: #ffffff;
 }
 :root {
-  --main-bg-color: #201d27;
   --large-font-size-35: 35px;
+  --medium-font-size-25: 25px;
   --small-font-size-16: 16px;
+  --very-small-font-size-14: 14px;
+  --main-bg-color: #201d27;
   --white-color: #ffffff;
   --light-grey-color: #dddddd;
+  --green-color: #29a643;
+  --light-green-color: #b1ffc2;
+  --red-color: #d51820;
+  --light-red-color: #ffa3a6;
+  --dark-blue-color: #0b0819;
 }

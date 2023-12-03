@@ -18,6 +18,34 @@ const styles = css`
     font-weight: 400;
     font-size: 35px;
   }
+  p {
+    font-weight: 400;
+    font-size: var(--small-font-size-16);
+    color: var(--light-grey-color);
+    margin: 0;
+  }
+  a {
+    color: var(--white-color);
+  }
+  .title {
+    padding: 20px;
+  }
+  .hero-subtitle-link-first {
+    display: flex;
+    font-size: var(--very-small-font-size-14);
+    margin-bottom: 15px;
+  }
+  .hero-subtitle-link-second {
+    display: flex;
+    font-size: var(--very-small-font-size-14);
+    a {
+      color: var(--red-color);
+      text-decoration: none;
+    }
+    .asterisk {
+      color: var(--red-color);
+    }
+  }
 `;
 
 export default styles;

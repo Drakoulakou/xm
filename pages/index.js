@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import Hero from "@/components/hero/Hero";
+import CryptoCardWrapper from "@/components/crypto-card-wrapper/CryptoCardWrapper";
+import TraderAdvantages from "@/components/trader-advantages/TraderAdvantages";
 
 export default function Home() {
   return (
@@ -11,6 +13,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Hero />
+      <CryptoCardWrapper />
+      <TraderAdvantages />
     </>
   );
 }
