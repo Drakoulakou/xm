@@ -3,6 +3,8 @@ import Image from "next/image";
 import Hero from "@/components/hero/Hero";
 import CryptoCardWrapper from "@/components/crypto-card-wrapper/CryptoCardWrapper";
 import TraderAdvantages from "@/components/trader-advantages/TraderAdvantages";
+import RegistrationInfo from "@/components/registration-info/RegistrationInfo";
+import RegistrationForm from "@/components/registration-form/RegistrationForm";
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
       <Hero />
       <CryptoCardWrapper />
       <TraderAdvantages />
+      <RegistrationInfo />
+      <RegistrationForm />
     </>
   );
 }

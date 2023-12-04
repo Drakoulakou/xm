@@ -16,10 +16,28 @@ h1 {
   --very-small-font-size-14: 14px;
   --main-bg-color: #201d27;
   --white-color: #ffffff;
+  --ultra-light-grey-color: #cccccc;
   --light-grey-color: #dddddd;
   --green-color: #29a643;
   --light-green-color: #b1ffc2;
   --red-color: #d51820;
   --light-red-color: #ffa3a6;
   --dark-blue-color: #0b0819;
+  --black-color: #0b0819;
+}
+
+progress[value] {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+
+  width: 250px;
+  height: 20px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #dddddd;
+  border-radius: 4px;
+  height: 8px;
+  width: 403px;
 }
