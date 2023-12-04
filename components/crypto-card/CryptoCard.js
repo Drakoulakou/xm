@@ -12,7 +12,7 @@ export default function CryptoCard({
 }) {
   console.log("down", down);
   return (
-    <section className={styles}>
+    <div className={styles}>
       <div className="cryptocard-uper-section">
         <Image
           className="padding"
@@ -38,6 +38,6 @@ export default function CryptoCard({
           {percentChange24h}%
         </div>
       </div>
-    </section>
+    </div>
   );
 }

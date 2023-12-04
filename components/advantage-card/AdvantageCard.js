@@ -21,7 +21,6 @@ export default function AdvantageCard({
     <section
       className={styles}
       style={{
-        maxWidth: vertical ? "200px" : "auto",
         flexFlow: vertical ? "column" : "row",
       }}
     >

@@ -12,20 +12,22 @@ export default function RegistrationForm() {
   const [progress2Percentage, setProgress2Percentage] = useState(0);
   return (
     <section className={styles}>
-      {formNumber === 1 ? <FormOne /> : <FormTwo />}
-      <Button
-        title={formNumber === 1 ? "CONTINUE" : "REGISTER NOW"}
-        onClick={() => setFormNumber(formNumber + 1)}
-      ></Button>
-      <div className="text-link-align">
-        <p>Don’t have an account?</p> <Link href="/">Create one here</Link>
-        <p>and register for the event</p>
-      </div>
-      <div className="text-link-align">
-        <p>Terms and Conditions apply*. To read the full T&Cs, click </p>
-        <Link href="/">here</Link>
-        <p>.</p>
-      </div>
+      <form>
+        {formNumber === 1 ? <FormOne /> : <FormTwo />}
+        <Button
+          title={formNumber === 1 ? "CONTINUE" : "REGISTER NOW"}
+          onClick={() => setFormNumber(formNumber + 1)}
+        ></Button>
+        <div className="text-link-align">
+          <p>Don’t have an account?</p> <Link href="/">Create one here</Link>
+          <p>and register for the event</p>
+        </div>
+        <div className="text-link-align">
+          <p>Terms and Conditions apply*. To read the full T&Cs, click </p>
+          <Link href="/">here</Link>
+          <p>.</p>
+        </div>
+      </form>
     </section>
   );
 }

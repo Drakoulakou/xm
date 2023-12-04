@@ -2,7 +2,7 @@ import { css } from "@emotion/css";
 
 const styles = css`
   display: flex;
-  background-color: black;
+  background-color: var(--black-color);
   justify-content: space-between;
   height: 113px;
   align-content: center;

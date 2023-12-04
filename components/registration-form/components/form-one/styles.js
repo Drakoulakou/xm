@@ -4,6 +4,7 @@ const styles = css`
   color: var(--white-color);
   background-color: var(--main-bg-color);
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   .step {
