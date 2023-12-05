@@ -6,7 +6,7 @@ export default function FormTwo({ methods }) {
     <div className={styles}>
       <div className="step">
         <p>Step 1</p>
-        <progress min="0" max="100" value="50" />
+        <progress min="0" max="100" value="100" />
         <Input
           label="Email:"
           placeholder="email@email.com"

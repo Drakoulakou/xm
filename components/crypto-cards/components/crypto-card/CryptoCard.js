@@ -26,13 +26,6 @@ export default function CryptoCard({
       <hr className="horizontal"></hr>
       <div>
         <div className="cryptoCard-priceUSD">$ {priceUSD}</div>
-        {/* <Image
-          className="padding"
-          src={down ? "/assets/up-caret.svg" : "/assets/up-caret.svg"}
-          width={30}
-          height={30}
-          alt="caret-icon"
-        /> */}
         <div className={`cryptoCard-percentChange24h ${down ? "red" : ""}`}>
           {percentChange24h}%
         </div>

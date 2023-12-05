@@ -9,6 +9,7 @@ const styles = css`
 
   .step {
     padding: 10px;
+    text-align: left;
   }
 
   p {

@@ -10,6 +10,7 @@ const styles = css`
 
   .step {
     padding: 10px;
+    text-align: left;
   }
   p {
     font-size: 14px;

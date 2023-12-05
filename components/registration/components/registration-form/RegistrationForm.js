@@ -1,11 +1,11 @@
 import { useState } from "react";
+import Link from "next/link";
 import { useForm } from "react-hook-form";
 import FormOne from "./components/form-one/FormOne";
 import FormTwo from "./components/form-two/FormTwo";
-import Button from "../button/Button";
-import Link from "next/link";
+import Button from "@/components/button/Button";
+import SuccessMessage from "@/components/registration/components/success-message/SuccessMessage";
 import styles from "./styles";
-import SuccessMessage from "../success-message/SuccessMessage";
 
 export default function RegistrationForm() {
   const [formNumber, setFormNumber] = useState(1);
@@ -22,7 +22,7 @@ export default function RegistrationForm() {
   };
 
   return (
-    <section className={styles}>
+    <div className={styles}>
       {success ? (
         <SuccessMessage />
       ) : (
@@ -60,6 +60,6 @@ export default function RegistrationForm() {
         Terms and Conditions apply*. To read the full T&Cs, click
         <Link href="/">here</Link>.
       </p>
-    </section>
+    </div>
   );
 }

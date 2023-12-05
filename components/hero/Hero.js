@@ -8,26 +8,23 @@ export default function Hero() {
   return (
     <section className={styles}>
       <p>TRADE WITH</p>
-      <div className="title">
-        <h1>
-          <strong>Zero Swaps </strong>
-          on All XM Ultra Low
-        </h1>
-        <h1>Accounts for more than 25 instruments!</h1>
-      </div>
+      <h1>
+        <strong>Zero Swaps </strong>
+        on All XM Ultra Low Accounts for more than 25 instruments!
+      </h1>
       <Subtitle subtitle="Enjoy spreads as low as 0.6 pips and leverage up to 1000:1 on" />
       <Subtitle subtitle="instruments like EURUSD, USDJPY, EURJPY, GBPUSD, and Gold." />
       <Button title="OPEN ACOUNT" />
-      <div className="hero-subtitle-link-first">
-        <p>New to trading? Try a </p> <Link href="/">Demo account.</Link>
-      </div>
-      <div className="hero-subtitle-link-second">
-        <p>
-          Terms and Conditions apply <span className="asterisk">*</span>.
-        </p>
-        <p> To read the full T&Cs, </p>
-        <Link href="/">click here.</Link>
-      </div>
+      <p className="hero-subtitle-link">
+        New to trading? Try a
+        <Link href="/" style={{ color: "white", textDecoration: "underline" }}>
+          Demo account.
+        </Link>
+      </p>
+      <p className="hero-subtitle-link">
+        Terms and Conditions apply <span className="asterisk">*</span>. To read
+        the full T&Cs, <Link href="/">click here.</Link>
+      </p>
     </section>
   );
 }

@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Subtitle from "../subtitle/Subtitle";
-import styles from "./styles";
+import Subtitle from "@/components/subtitle/Subtitle";
 import Horizontal from "../horizontal/Horizontal";
+import styles from "./styles";
 
 export default function AdvantageCard({
   icon,
@@ -25,8 +25,8 @@ export default function AdvantageCard({
       }}
     >
       <div>
-        <h1 className="advantageCard-title">{title}</h1>
-        <h1 className="advantageCard-title-second">{titleSecond}</h1>
+        <h3 className="advantageCard-title">{title}</h3>
+        <h3 className="advantageCard-title-second">{titleSecond}</h3>
         <Horizontal />
         <Subtitle className="advantageCard-subtitle" subtitle={subtitle} />
       </div>
@@ -35,7 +35,7 @@ export default function AdvantageCard({
         src={icon}
         width={imageDimensions.width}
         height={imageDimensions.height}
-        alt="Icon"
+        alt={title}
       />
     </section>
   );

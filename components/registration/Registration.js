@@ -6,14 +6,15 @@ import {
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
 import styles from "./styles";
+import RegistrationForm from "./components/registration-form/RegistrationForm";
 
-export default function RegistrationInfo() {
+export default function Registration() {
   return (
     <section className={styles}>
       <h1>- Register Here -</h1>
       <Subtitle
         className="subtitle"
-        subtitle={"Join us to celebrate our biggest night of the year."}
+        subtitle="Join us to celebrate our biggest night of the year."
       />
       <div className="tableInfo">
         <div className="calendarInfo">
@@ -29,6 +30,7 @@ export default function RegistrationInfo() {
           <p>Centara Grand & Bangkok Convention Centre, Bangkok</p>
         </div>
       </div>
+      <RegistrationForm />
     </section>
   );
 }

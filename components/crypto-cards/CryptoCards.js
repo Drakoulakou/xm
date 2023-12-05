@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
-import CryptoCard from "../crypto-card/CryptoCard";
+import CryptoCard from "./components/crypto-card/CryptoCard";
 import styles from "./styles";
 
 const allowedSymbols = ["BTC", "ETH", "XRP", "LTC", "BCH"];
 
-export default function CryptoCardWrapper() {
+export default function CryptoCards() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
@@ -22,7 +22,9 @@ export default function CryptoCardWrapper() {
       fetchData();
     }
   }, [data]);
+
   console.log("data", data);
+
   return (
     <section className={styles}>
       {data &&
@@ -36,7 +38,6 @@ export default function CryptoCardWrapper() {
             icon={`/assets/${ticker.symbol}.svg`}
             caret={"/assets/green-caret.svg"}
             down={ticker.percent_change_24h[0] === "-"}
-            title="caaaaaaard"
           />
         ))}
     </section>
