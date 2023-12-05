@@ -6,15 +6,15 @@ const styles = css`
   background-color: var(--ultra-light-green-color);
   margin-bottom: 25px;
 
-  p {
-    color: var(--green-color);
-  }
-
   .inline {
     display: flex;
     flex-flow: row;
     justify-content: start;
     align-items: center;
+
+    p {
+      color: var(--green-color);
+    }
 
     svg {
       margin-right: 15px;
