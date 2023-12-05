@@ -5,9 +5,10 @@ const styles = css`
   flex-direction: column;
   align-items: center;
 
-  h1 {
+  h2 {
     font-size: var(--medium-font-size-25);
     font-weight: 300;
+    color: white;
   }
   p {
     font-size: 14px;
@@ -26,6 +27,7 @@ const styles = css`
     display: flex;
     flex-flow: row;
     justify-content: center;
+    max-width: 1200px;
 
     @media (max-width: 480px) {
       flex-flow: column;

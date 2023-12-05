@@ -6,10 +6,10 @@ import styles from "./styles";
 
 export default function TraderAdvantages() {
   return (
-    <div className={styles}>
-      <h1>
+    <section className={styles}>
+      <h2>
         Why <strong>Trade</strong> with XM?
-      </h1>
+      </h2>
       <Horizontal />
       <Subtitle subtitle="We have been providing traders around the world with the same premium experience for over a decade. As an industry-leader, we know what the modern trader needs to be successful in the markets." />
       <div className="inline">
@@ -43,6 +43,6 @@ export default function TraderAdvantages() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
