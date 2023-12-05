@@ -1,26 +1,40 @@
 import { css } from "@emotion/css";
 
 const styles = css`
+  background-color: var(--main-bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+
+  p {
+    color: var(--white-color);
+    font-size: var(--very-small-font-size-14);
+    margin: 0 4px;
+  }
+
+  .text-link-align {
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+    padding: 0 25px;
+    margin-bottom: 20px;
+
+    @media (max-width: 480px) {
+      flex-direction: column;
+    }
+  }
+
+  a {
+    color: var(--red-color);
+    text-decoration: none;
+  }
+
   form {
-    background-color: var(--main-bg-color);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 50px;
-    p {
-      color: var(--white-color);
-      font-size: var(--very-small-font-size-14);
-    }
-    a {
-      color: var(--red-color);
-      text-decoration: none;
-    }
-    .text-link-align {
-      display: flex;
-      align-content: center;
-      align-items: center;
-      font-size: 14px;
-    }
+    padding-bottom: 20px;
   }
 `;
 

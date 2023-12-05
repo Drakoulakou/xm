@@ -24,6 +24,9 @@ const styles = css`
     color: var(--light-grey-color);
     margin: 0;
   }
+  & > p {
+    padding: 0 25px;
+  }
   a {
     color: var(--white-color);
   }
@@ -38,6 +41,10 @@ const styles = css`
   .hero-subtitle-link-second {
     display: flex;
     font-size: var(--very-small-font-size-14);
+
+    @media (max-width: 480px) {
+      flex-direction: column;
+    }
     a {
       color: var(--red-color);
       text-decoration: none;

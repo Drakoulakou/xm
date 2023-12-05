@@ -10,7 +10,6 @@ export default function CryptoCard({
   caret,
   down,
 }) {
-  console.log("down", down);
   return (
     <div className={styles}>
       <div className="cryptocard-uper-section">

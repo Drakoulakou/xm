@@ -2,12 +2,10 @@ import { css } from "@emotion/css";
 
 const styles = css`
   background-color: var(--main-bg-color);
-  // background-image: url("/assets/vector.svg");
-  // background-size: cover;
-  // background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+
   h1 {
     font-size: var(--medium-font-size-25);
     font-weight: 300;
@@ -18,6 +16,11 @@ const styles = css`
     padding-bottom: 27px;
     max-width: 635px;
     text-align: center;
+  }
+
+  & > p {
+    padding: 0 25px;
+    margin-bottom: 15px;
   }
 
   .inline {

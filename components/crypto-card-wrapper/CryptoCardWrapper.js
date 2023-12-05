@@ -15,9 +15,7 @@ export default function CryptoCardWrapper() {
         setData(
           result?.data?.filter((item) => allowedSymbols.includes(item.symbol))
         );
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
+      } catch (error) {}
     };
 
     if (!data) {

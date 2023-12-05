@@ -1,33 +1,65 @@
 import { useState } from "react";
-
-import styles from "./styles";
+import { useForm } from "react-hook-form";
 import FormOne from "./components/form-one/FormOne";
 import FormTwo from "./components/form-two/FormTwo";
 import Button from "../button/Button";
 import Link from "next/link";
+import styles from "./styles";
+import SuccessMessage from "../success-message/SuccessMessage";
 
 export default function RegistrationForm() {
   const [formNumber, setFormNumber] = useState(1);
   const [progress1Percentage, setProgress1Percentage] = useState(0);
   const [progress2Percentage, setProgress2Percentage] = useState(0);
+  const [success, setSuccess] = useState(false);
+
+  const methods = useForm({ mode: "onChange" });
+  const onSubmit = (data) => {
+    if (methods.formState.isValid) {
+      console.log("formData", data);
+      setSuccess(true);
+    }
+  };
+
   return (
     <section className={styles}>
-      <form>
-        {formNumber === 1 ? <FormOne /> : <FormTwo />}
-        <Button
-          title={formNumber === 1 ? "CONTINUE" : "REGISTER NOW"}
-          onClick={() => setFormNumber(formNumber + 1)}
-        ></Button>
-        <div className="text-link-align">
-          <p>Don’t have an account?</p> <Link href="/">Create one here</Link>
-          <p>and register for the event</p>
-        </div>
-        <div className="text-link-align">
-          <p>Terms and Conditions apply*. To read the full T&Cs, click </p>
-          <Link href="/">here</Link>
-          <p>.</p>
-        </div>
-      </form>
+      {success ? (
+        <SuccessMessage />
+      ) : (
+        <form onSubmit={methods.handleSubmit(onSubmit)}>
+          {formNumber === 1 ? (
+            <>
+              <FormOne methods={methods} />
+              <Button
+                title="CONTINUE"
+                disabled={!methods.formState.isValid}
+                onClick={(event) => {
+                  event.preventDefault();
+                  event.stopPropagation();
+                  setFormNumber(formNumber + 1);
+                }}
+              />
+            </>
+          ) : (
+            <>
+              <FormTwo methods={methods} />
+              <Button
+                title="REGISTER NOW"
+                type="submit"
+                disabled={!methods.formState.isValid}
+              />
+            </>
+          )}
+        </form>
+      )}
+      <p className="text-link-align">
+        Don’t have an account? <Link href="/">Create one here</Link> and
+        register for the event
+      </p>
+      <p className="text-link-align">
+        Terms and Conditions apply*. To read the full T&Cs, click
+        <Link href="/">here</Link>.
+      </p>
     </section>
   );
 }

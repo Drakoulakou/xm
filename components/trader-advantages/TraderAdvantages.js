@@ -12,7 +12,6 @@ export default function TraderAdvantages() {
       </h1>
       <Horizontal />
       <Subtitle
-        className="subtitle"
         subtitle={
           "We have been providing traders around the world with the same premium experience for over a decade. As an industry-leader, we know what the modern trader needs to be successful in the markets."
         }

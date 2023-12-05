@@ -12,6 +12,10 @@ const styles = css`
   border: none;
   cursor: pointer;
 
+  &[disabled] {
+    background-color: var(--ultra-light-grey-color);
+  }
+
   @media (max-width: 480px) {
     width: 290px;
   }

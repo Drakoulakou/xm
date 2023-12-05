@@ -7,11 +7,21 @@ const styles = css`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
   .step {
     padding: 10px;
   }
   p {
     font-size: 14px;
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    width: 100%;
+
+    .step {
+      width: 85%;
+    }
   }
 `;
 

@@ -22,9 +22,10 @@ export default function Hero() {
         <p>New to trading? Try a </p> <Link href="/">Demo account.</Link>
       </div>
       <div className="hero-subtitle-link-second">
-        <p>Terms and Conditions apply</p>
-        <p className="asterisk">*</p>
-        <p>. To read the full T&Cs, </p>
+        <p>
+          Terms and Conditions apply <span className="asterisk">*</span>.
+        </p>
+        <p> To read the full T&Cs, </p>
         <Link href="/">click here.</Link>
       </div>
     </section>
