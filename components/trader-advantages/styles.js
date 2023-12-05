@@ -1,7 +1,6 @@
 import { css } from "@emotion/css";
 
 const styles = css`
-  background-color: var(--main-bg-color);
   display: flex;
   flex-direction: column;
   align-items: center;

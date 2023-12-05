@@ -6,7 +6,7 @@ import styles from "./styles";
 
 export default function TraderAdvantages() {
   return (
-    <section className={styles}>
+    <div className={styles}>
       <h1>
         Why <strong>Trade</strong> with XM?
       </h1>
@@ -43,6 +43,6 @@ export default function TraderAdvantages() {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }

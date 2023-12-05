@@ -51,3 +51,11 @@ progress[value]::-webkit-progress-bar {
   border-radius: 4px;
   height: 8px;
 }
+
+.main-background {
+  background-color: var(--main-bg-color);
+  background-image: url(/assets/vector.svg), url(/assets/circle.svg);
+  background-size: cover, auto;
+  background-position: center, center left;
+  background-repeat: no-repeat;
+}

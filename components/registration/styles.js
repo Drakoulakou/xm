@@ -2,7 +2,6 @@ import { css } from "@emotion/css";
 
 const styles = css`
   color: var(--white-color);
-  background-color: var(--main-bg-color);
   text-align: center;
   padding-top: 50px;
 
